@@ -142,7 +142,7 @@ app.post("/send", (req, res) => {
     }
     console.log("Message sent: %s", info.messageId);
     console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
-    res.render("home");
+    // res.render("home");
     res.send({
       emailSend: "successFull",
     });
